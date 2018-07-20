@@ -19,12 +19,7 @@
 // LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER 
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF 
 // THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-	// Root url for all api calls and links back to Canvas
-	$canvasURL = 'https://canvas.ou.edu';
-	// This is the authorization token from Canvas
-	// $token = "8808~KqhfJC64BdGoQpwYkxYifD4qGVL23n7pQs9le7dQjzDID264C38M4NldjM6Lbi7w";
-	$token = "8808~fQO2jKg6TUf2rIUBXNVl4sXhIHuHc3EY2s84el2v3dTXTQ7cz66BeSUqo8xiPKSV";
+include('config.php');
 	
 	// To generate this token, choose/create an admin user that you would like to generate the token from
 	// 1.	Click the "profile" link in the top right menu bar, or navigate to /profile

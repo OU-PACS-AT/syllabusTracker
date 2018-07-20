@@ -19,12 +19,7 @@
 // LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER 
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF 
 // THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-	// Root url for all api calls and links back to Canvas
-	$canvasURL = 'https://canvas.ou.edu';
-	// This is the authorization token from Canvas
-	// $token = "8808~KqhfJC64BdGoQpwYkxYifD4qGVL23n7pQs9le7dQjzDID264C38M4NldjM6Lbi7w";
-	$token = "8808~sTsDwqWrpUjA8Qi3rBVAofyEFC3LesNrSInAkOduY5GeeX2UCJhYfoFZYpLUtbOZ";
+include('config.php');
 	
 	// To generate this token, choose/create an admin user that you would like to generate the token from
 	// 1.	Click the "profile" link in the top right menu bar, or navigate to /profile
@@ -61,7 +56,6 @@
 		echo '<option value="'.$Spring18Code.'" selected>Spring 2018</option>';
 		echo '<option value="'.$Summer18Code.'">Summer 2018</option>';
 		echo '<option value="'.$Fall18Code.'" selected>Fall 2018</option>';
-		
 		
 		//echo '<option value="'.$prevYear.$SpringCode.'">Spring '.$prevYear.'</option>';
 
