@@ -49,13 +49,19 @@ include('config.php');
 		$Spring18Code = '29';
 		$Summer18Code = '32';
 		$Fall18Code = '79';
+		$Spring19Code = '80';
+		$Summer19Code = '81';
+		$Fall19Code = '89';
 		
 		echo '<option value="'.$Spring17Code.'">Spring 2017</option>';
 		echo '<option value="'.$Fall17Code.'">Fall 2017</option>';
 		echo '<option value="'.$Summer17Code.'">Summer 2017</option>';
-		echo '<option value="'.$Spring18Code.'" selected>Spring 2018</option>';
+		echo '<option value="'.$Spring18Code.'">Spring 2018</option>';
 		echo '<option value="'.$Summer18Code.'">Summer 2018</option>';
 		echo '<option value="'.$Fall18Code.'" selected>Fall 2018</option>';
+		echo '<option value="'.$Spring19Code.'">Spring 2019</option>';
+		echo '<option value="'.$Summer19Code.'">Summer 2019</option>';
+		echo '<option value="'.$Fall19Code.'">Fall 2019</option>';
 		
 		//echo '<option value="'.$prevYear.$SpringCode.'">Spring '.$prevYear.'</option>';
 
