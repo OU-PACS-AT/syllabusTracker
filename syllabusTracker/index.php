@@ -21,11 +21,17 @@
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF 
 // THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+	// SimpleSAML 
+	// Require authentication to access page
+	require_once('../../../simplesamlphp/lib/_autoload.php');
+	$auth = new SimpleSAML_Auth_Simple('default-sp');
+	$auth->requireAuth();
 
+	
 	ini_set('display_errors', 1);
 	//error_reporting(E_ALL ^ E_NOTICE);
 	error_reporting(E_ERROR);
-	include 'variableSetup.php';
+	include '../../config/variableSetup.php';
 	?>
 <!DOCTYPE html>
 <head>
@@ -47,6 +53,15 @@
 	<script src="resources/js/syllabus.js"></script>
 </head>
 <body>
+	<div class="heading">
+		<div class="container-fluid">
+			<div class="key pull-right">
+				<p style="display:inline;">You are logged in as <?= $_COOKIE["FirstName"]." ".$_COOKIE["LastName"]?> </p>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/simplesaml/module.php/core/as_logout.php?AuthId=default-sp&ReturnTo=https%3A%2F%2Fsso.ou.edu/ext/logmeout" role="button" class="btn btn-mini pull-right">Logout</a>
+			</div>
+		</div>
+	</div>
 	<div class="heading">
 		<div class="container-fluid">
 			<div class="key pull-right">

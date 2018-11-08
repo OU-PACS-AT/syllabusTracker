@@ -2,7 +2,7 @@
 	// This page contains the Canvas API calls necessary to run the USU Canvas Course Syllabus Tracker
 	// created by Kenneth Larsen for the Center for Innovative Design and Instruction at Utah State University
 
-	include __DIR__.'/../variableSetup.php';
+	include __DIR__.'/../../../config/variableSetup.php';
 	$tokenHeader = array("Authorization: Bearer ".$token);
 
 	// Display any php errors (for development purposes)
