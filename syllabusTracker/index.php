@@ -23,9 +23,9 @@
 
 	// SimpleSAML 
 	// Require authentication to access page
-	require_once('../../../simplesamlphp_project/app/lib/_autoload.php');
-	$auth = new SimpleSAML_Auth_Simple('default-sp');
-	$auth->requireAuth();
+	//require_once('../../../simplesamlphp_project/app/lib/_autoload.php');
+	//$auth = new SimpleSAML_Auth_Simple('default-sp');
+	//$auth->requireAuth();
 
 	
 	ini_set('display_errors', 1);
