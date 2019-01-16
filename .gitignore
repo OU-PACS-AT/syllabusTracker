@@ -1,0 +1,6 @@
+syllabusTracker/config.php
+syllabusTracker_pp/config.php
+syllabusTracker/reportData/json
+syllabusTracker_pp/reportData/json
+logs
+.git/*
